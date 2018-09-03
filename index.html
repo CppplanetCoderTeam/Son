@@ -3,7 +3,16 @@
 <head>
 <title>HTML页面</title>
 </head>
-<script type="text/javascript" src="http://ip.chinaz.com/getip.aspx"></script>
+  <script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(function () {            
+            $(".like").click(function () {
+                $(this).toggleClass('cs');                
+            })
+        })
+    </script>
+.like{ font-size:66px;  color:#ccc; cursor:pointer;}
+.cs{color:#f00;}
 <body>
 <p style="font-family:STXinwei;color:green">This text is in Verdana and red</p>
   <p class="like">&#10084;</p>
